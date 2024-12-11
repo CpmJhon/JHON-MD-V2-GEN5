@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Download File</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>File Siap Diunduh</h1>
+    <p>File Anda: <%= filename %></p>
+    <a href="/download/<%= filepath.split('/').pop() %>" class="btn">Download File</a>
+</body>
+</html>

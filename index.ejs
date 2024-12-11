@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MediaFire Clone</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Selamat Datang di MediaFire Clone</h1>
+    <p>Selesaikan verifikasi untuk membuka akses download:</p>
+
+    <% if (!isVerified) { %>
+        <form action="/verify" method="POST">
+            <button type="submit" class="btn">Verify Now</button>
+        </form>
+    <% } else { %>
+        <p style="color: green;">Anda telah terverifikasi!</p>
+    <% } %>
+
+    <a href="/upload" class="btn">Upload File</a>
+
+    <footer>
+        <h3>Ikuti kami di:</h3>
+        <a href="https://facebook.com" class="social-btn">Facebook</a>
+        <a href="https://twitter.com" class="social-btn">Twitter</a>
+        <a href="https://instagram.com" class="social-btn">Instagram</a>
+    </footer>
+</body>
+</html>
